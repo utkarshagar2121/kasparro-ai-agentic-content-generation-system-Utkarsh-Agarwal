@@ -1,9 +1,5 @@
 # Multi-Agent Content Generation System
 
-### Author: Utkarsh Agarwal
-
----
-
 ## 1. Problem Statement
 
 Manual creation of product content such as FAQs, product description pages, and comparison summaries is time-consuming, repetitive, and prone to inconsistencies.  
@@ -78,7 +74,10 @@ JSON Output Agent
 Final JSON Content Files
 
 yaml
-Copy code
+
+Diagram Representation:
+
+<p align="center"> <img src="./image.png" alt="System Architecture Diagram" width="700"/> </p>
 
 ---
 
