@@ -73,9 +73,7 @@ JSON Output Agent
 ↓
 Final JSON Content Files
 
-yaml
-
-Diagram Representation:
+#### Diagram Representation:
 
 <p align="center"> <img src="./image.png" alt="System Architecture Diagram" width="700"/> </p>
 
@@ -103,9 +101,6 @@ Create logic blocks →
 Assemble content pages using templates →
 Export pages to JSON →
 Store in output directory
-
-yaml
-Copy code
 
 This architecture ensures:
 
@@ -137,16 +132,3 @@ Each file contains:
 This project demonstrates a modular and extensible multi-agent automation system for structured content generation.  
 The workflow converts raw product data into formatted page outputs, maintaining reusable logic and template-driven structure.
 
-It validates engineering principles including:
-
-- Clear responsibility separation
-- Agent orchestration flow
-- Reusability and template-based design
-- Machine-readable structured JSON output
-
-Future enhancements include:
-
-- AI-powered answer generation
-- Multi-product batch processing
-- Workflow DAG engines (Prefect / LangGraph / Ray)
-- Template file separation & dynamic comparison models
