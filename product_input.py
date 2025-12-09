@@ -1,6 +1,3 @@
-# product_input.py
-
-# Raw product dataset received as input for our system
 product_raw_data = {
     "Product Name": "GlowBoost Vitamin C Serum",
     "Concentration": "10% Vitamin C",

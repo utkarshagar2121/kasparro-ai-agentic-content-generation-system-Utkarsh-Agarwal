@@ -1,11 +1,4 @@
-# agents/template_agent.py
-
 class TemplateAgent:
-    """
-    This agent assembles structured content pages using predefined templates
-    and content blocks supplied by other agents.
-    """
-
     def build_faq_page(self, product, questions, logic_blocks):
         faq_page = {
             "title": f"FAQs for {product['name']}",

@@ -1,11 +1,4 @@
-# agents/question_agent.py
-
 class QuestionAgent:
-    """
-    This agent generates categorized user questions based on the parsed product data.
-    It does not create answers yet — answers will be built using logic blocks later.
-    """
-
     def generate_questions(self, product):
         questions = {
             "Informational": [

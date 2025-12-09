@@ -7,22 +7,15 @@ from agents.json_agent import JSONOutputAgent
 
 
 def run_pipeline():
-    # Instantiate agents
     parser_agent = ParserAgent()
     question_agent = QuestionAgent()
     logic_agent = LogicAgent()
     template_agent = TemplateAgent()
     json_agent = JSONOutputAgent(output_dir="output")
-
-    # 1. Parse raw product data
     product = parser_agent.parse(product_raw_data)
-    print("✅ Parsed product data.")
-
-    # 2. Generate categorized user questions
+    print(" Parsed product data.")
     questions = question_agent.generate_questions(product)
-    print("✅ Generated categorized questions.")
-
-    # 3. Generate reusable content logic blocks
+    print(" Generated categorized questions.")
     logic_blocks = {
         "benefits": logic_agent.generate_benefits_block(product),
         "usage": logic_agent.generate_usage_block(product),
@@ -30,15 +23,11 @@ def run_pipeline():
         "price": logic_agent.generate_price_block(product),
         "comparison": logic_agent.generate_comparison_block(product)
     }
-    print("✅ Generated content logic blocks.")
-
-    # 4. Build pages using templates
+    print(" Generated content logic blocks.")
     faq_page = template_agent.build_faq_page(product, questions, logic_blocks)
     product_page = template_agent.build_product_page(product, logic_blocks)
     comparison_page = template_agent.build_comparison_page(product, logic_blocks)
-    print("✅ Assembled FAQ, Product, and Comparison pages.")
-
-    # 5. Output pages as JSON
+    print(" Assembled FAQ, Product, and Comparison pages.")
     json_agent.save_faq_page(faq_page)
     json_agent.save_product_page(product_page)
     json_agent.save_comparison_page(comparison_page)
