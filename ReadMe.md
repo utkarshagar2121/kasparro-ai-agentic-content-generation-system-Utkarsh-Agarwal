@@ -59,9 +59,9 @@ All output files are saved inside the `/output` directory.
 
 ### 4.1 Pipeline Flow Diagram
 
-Raw Product Data
-↓
-Parser Agent
+Raw Product Data\n
+↓\n
+Parser Agent\n
 ↓
 Question Agent
 ↓
@@ -131,4 +131,3 @@ Each file contains:
 
 This project demonstrates a modular and extensible multi-agent automation system for structured content generation.  
 The workflow converts raw product data into formatted page outputs, maintaining reusable logic and template-driven structure.
-
