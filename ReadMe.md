@@ -65,7 +65,7 @@ Parser Agent<br>
 ↓<br>
 Question Agent<br>
 ↓<br>
-Logic Agent
+Logic Agent<br>
 ↓<br>
 Template Agent<br>
 ↓<br>
